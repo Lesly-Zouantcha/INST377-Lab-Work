@@ -44,6 +44,12 @@
     align-items: center;
   }
 
+  .social,
+  .subscribe{
+  align-self: flex-end;
+  margin-bottom: 20px;
+  }
+
   .photo-grid-container {
     display: flex;
     justify-content: center;
@@ -70,12 +76,6 @@
   
   .last-item {
     order: -1;
-  }
-
-  .social,
-  .subscribe {
-  align-self: flex-end;
-  margin-bottom: 20px;
   }
 
   .footer {
