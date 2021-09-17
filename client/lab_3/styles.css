@@ -73,28 +73,35 @@
   }
 
   .social,
-.subscribe {
+  .subscribe {
   align-self: flex-end;
   margin-bottom: 20px;
-}
+  }
 
-.footer {
+  .footer {
     display: flex;
     justify-content: space-between;
   }
   
-.footer-item {
+  .footer-item {
     border: 1px solid #fff;
     background-color: #D6E9FE;
     height: 200px;
     flex: 1;
   }
 
-.footer-three {
+  .footer-three {
     flex: 2;
   }
 
-.signup {
+.footer-one,
+.footer-three {
+  background-color: #5995DA;
+  flex: initial;
+  width: 300px;
+  } 
+
+  .signup {
     margin-left: auto;
-}
+  }
   
