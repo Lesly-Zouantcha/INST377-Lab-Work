@@ -61,7 +61,7 @@ body {
 .obstacle {
     background-image: url('flappybird-pipe.png');
     width: 60px;
-    height: 300pv;
+    height: 300px;
     position: absolute;
 }
 
@@ -69,6 +69,6 @@ body {
     background-image: url('flappybird-pipe.png');
     transform: rotate(180deg);
     width: 60px;
-    height: 300pv;
+    height: 300px;
     position: absolute;
 }
