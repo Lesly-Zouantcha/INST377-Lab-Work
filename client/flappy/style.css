@@ -10,7 +10,7 @@ body {
 }
 
 .sky {
-    background-color: blue;
+    background-image:url('fb-game-background.png');
     width: 500px;
     height: 580px;
     position: absolute;
@@ -43,7 +43,7 @@ body {
 }
 
 .ground {
-    background-color: brown;
+    background-image:url('bottom-background.png');
     width: 500px;
     height: 150px;
     position:absolute;
@@ -52,7 +52,7 @@ body {
 }
 
 .bird {
-    background-color: yellow;
+    background-image: url('flappy-bird.png');
     position: absolute;
     width: 60px;
     height: 45px;
