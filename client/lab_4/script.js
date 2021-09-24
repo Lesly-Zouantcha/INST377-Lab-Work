@@ -6,10 +6,9 @@ const totalSlides = slides.length;
 document.querySelector('#next-button')
 .addEventListener("click", function() {
     moveToNextSlide();
-}
+});
 
-document.querySelector('#previous-button').addEventListener("click",function() {
-    moveToPrevSlide();});
+document.querySelector('#previous-button').addEventListener("click", function() {moveToPrevSlide();});
 
 function updateSlidePosition() {
     for (let slide of slides) {

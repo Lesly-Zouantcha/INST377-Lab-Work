@@ -97,7 +97,7 @@
   }
 
   .photo-grid-container .carousel .carousel_actions button#next-button {
-    margin-left: 20px;
+    margin-right: 20px;
   }
 
   @keyframes fadeVisibility {
