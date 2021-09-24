@@ -72,7 +72,7 @@
     height: auto;
   }
 
-  .carousel .carousel_item--vivible {
+  .carousel .carousel_item--visible {
     display: block;
     animation: fadeVisibility 0.5s;
   }
