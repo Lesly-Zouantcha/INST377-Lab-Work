@@ -77,20 +77,27 @@
     animation: fadeVisibility 0.5s;
   }
 
-  button.previous_button  {
-    border-radius: 50px;
-    border: 0;
-    font-weight: bold;
-    margin-left: 20px;
-
+  .carousel .carousel_actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
   }
 
-  button.next_button  {
+  .carousel .carousel_actions button {
     border-radius: 50px;
     border: 0;
     font-weight: bold;
-    margin-right: 20px;
+  }
+   
+  .carousel .carousel_actions button#previous_button {
+    margin-left: 20px;
+  }
 
+  .carousel .carousel_actions button#next_button {
+    margin-left: 20px;
   }
 
   @keyframes fadeVisibility {
