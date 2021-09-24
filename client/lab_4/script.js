@@ -19,7 +19,7 @@ function updateSlidePosition() {
         slide.classList.add('.carousel_item--hidden');
     }
 
-    slides[slidePosition].classList.add('.carousel_item--visible' )
+    slides[slidePosition].classList.add('.carousel_item--visible')
 }
 
 function moveToNextSlide() {

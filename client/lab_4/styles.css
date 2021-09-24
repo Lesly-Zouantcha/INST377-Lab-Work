@@ -77,7 +77,7 @@
     animation: fadeVisibility 0.5s;
   }
 
-  .photo-grid-container .carousel_actions {
+  .photo-grid-container .carousel .carousel_actions {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -86,17 +86,17 @@
     transform: translateY(-50%)
   }
 
-  .photo-grid-container .carousel_actions button {
+  .photo-grid-container .carousel .carousel_actions button {
     border-radius: 50px;
     border: 0;
     font-weight: bold;
   }
    
-  .photo-grid-container .carousel_actions button#previous-button {
+  .photo-grid-container .carousel .carousel_actions button#previous-button {
     margin-left: 20px;
   }
 
-  .photo-grid-container .carousel_actions button#next-button {
+  .photo-grid-container .carousel .carousel_actions button#next-button {
     margin-left: 20px;
   }
 
