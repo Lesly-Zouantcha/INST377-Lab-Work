@@ -92,11 +92,11 @@
     font-weight: bold;
   }
    
-  .carousel .carousel_actions button#previous_button {
+  .carousel .carousel_actions button#previous-button {
     margin-left: 20px;
   }
 
-  .carousel .carousel_actions button#next_button {
+  .carousel .carousel_actions button#next-button {
     margin-left: 20px;
   }
 
