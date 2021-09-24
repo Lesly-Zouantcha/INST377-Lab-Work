@@ -55,6 +55,54 @@
     justify-content: center;
   }
   
+  .carousel {
+    overflow: hidden;
+    max-width: 600px;
+    position: relative;
+  }
+
+  .carousel .carousel_item,
+  .carousel .carousel_item--hidden {
+    display: none;
+  }
+
+  .carousel .carousel_item img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+
+  .carousel .carousel_item--vivible {
+    display: block;
+    animation: fadeVisibility 0.5s;
+  }
+
+  button.previous_button  {
+    border-radius: 50px;
+    border: 0;
+    font-weight: bold;
+    margin-left: 20px;
+
+  }
+
+  button.next_button  {
+    border-radius: 50px;
+    border: 0;
+    font-weight: bold;
+    margin-right: 20px;
+
+  }
+
+  @keyframes fadeVisibility {
+    0% {
+      opacity: 0;;
+    }
+    100% {
+      opacity: 1;
+      transform: opacity linear;
+    }
+  }
+
   .photo-grid {
     width: 900px;
     display: flex;
