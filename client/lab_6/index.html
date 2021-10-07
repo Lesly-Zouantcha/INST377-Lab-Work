@@ -7,60 +7,12 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body class="p-3">
-    <div class="notification is-warning">
-      Lesly Zouantcha Lab 6
-    </div>
-    <div class="columns is-centered is-desktop">
-      <div class="column is-3">
-        <form class="box" method="" action="" onsubmit="return false;" id="search-form">
-          <div class="field">
-            <label class="label">Search Term</label>
-            <div class="control">
-              <input name="search_term" class="input" type="text" id="search-term">
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label">Search By</label>
-            <div class="control">
-              <label class="radio">
-                <input type="radio" name="search_type" value="type">
-                Type of Restaurant
-              </label>
-            </div>
-          </div>
-
-          <button class="button is-primary">Submit</button>
-      </form>
-      </div>
-      <div class="column is-8">
-        <div class="card">
-          <div class="card-content">
-            <h3 class="title is-3">Resturant Search Results</h3>
-
-            <!-- No result element -->
-            <div class="notification is-warning" id="no-results">
-              Find resturants by entering your search query.
-            </div>
-
-            <!-- Result Element -->
-            <div class="table-container">
-              <table class="table is-hidden is-fullwidth" id="result-table">
-                  <thead>
-                    <tr>
-                      <th>Name</th>
-                      <th>Business Category</th>
-                      <th>Address_Line_1</th>
-                      <th>City</th>
-                      <th>Zip</th>
-                    </tr>
-                  </thead>
-                  <tbody id="result-table-results"></tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
+    <h1 class='title'>Lesly Zouantcha's Lab 6</h1>
+    <div class="control">
+        <label class="radio">
+          <input type="radio" name="search_type" value="type">
+          Type of Restaurant
+        </label>
     </div>
     <script src="script.js"></script>
   </body>
