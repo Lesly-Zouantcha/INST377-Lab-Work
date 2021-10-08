@@ -8,11 +8,11 @@ async function windowActions() {
   function findMatches(wordToMatch, types) {
     return types.filter(place=> {
       const regex = new RegExp(wordToMatch, 'gi');
-      return restaurant.type.match(regex) || restaurant.name.match(regex)
-    })}
+      return restaurant.type.match(regex) || restaurant.name.match(regex);
+    }); }
 
   function displayMatches(event) {
-    const matchArray = findMatches(events.target.value, types)
+    const matchArray = findMatches(events.target.value, types);
     const html = matchArray.map(restaurant => {
         return `
             <li>
@@ -30,11 +30,11 @@ async function windowActions() {
     suggestions.innerHTML = html;
   }
 
-  const searchInput = document.querySelector('.search')
-  const suggestions = document.querySelector('.suggestions')
+  const searchInput = document.querySelector('.search');
+  const suggestions = document.querySelector('.suggestions');
 
-  searchInput.addEventListener('change', displayMatches)
-  searchInput.addEventListener('keyup', (evt) => {displayMatches(evt)})
+  searchInput.addEventListener('change', displayMatches);
+  searchInput.addEventListener('keyup', (evt) => { displayMatches(evt); });
 }
 
 window.onload = windowActions();
