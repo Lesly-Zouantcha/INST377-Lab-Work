@@ -27,10 +27,10 @@ async function windowActions() {
 
       return `
                  <li>
-                     <span class="name">${placeName}</span>
-                     <span class="name">${typeName}</span>
-                     <span class="name">${cityName}</span>
-                     <span class="name">${stateName}</span>
+                     <div class="name">${placeName}</div>
+                     <div class="category">${typeName}</div>
+                     <div class="city">${cityName}</div>
+                     <div class="state">${stateName}</div>
                  </li>
              `;
     }).join('');
