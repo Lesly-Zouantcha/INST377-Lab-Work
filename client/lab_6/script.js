@@ -15,7 +15,7 @@ async function windowActions() {
     });
   }
 
-  function displayMatches() {
+  function displayMatches(events) {
     const matchArray = findMatches(events.target.value, cities);
 
     const suggestionsListHtml = matchArray.map((place) => {
