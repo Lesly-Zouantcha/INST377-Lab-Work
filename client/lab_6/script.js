@@ -23,7 +23,7 @@ async function windowActions() {
       const cityName = place.city.replace(regex, `<span class="hl">${events.target.value}</span>`);
       const stateName = place.state.replace(regex, `<span class="hl">${events.target.value}</span>`);
       const placeName = place.name.replace(regex, `<span class="hl">${events.target.value}</span>`);
-      const typeName = place.type.replace(regex, `<span class="hl">${events.target.value}</span>`);
+      const typeName = place.category.replace(regex, `<span class="hl">${events.target.value}</span>`);
 
       return `
                  <li>
