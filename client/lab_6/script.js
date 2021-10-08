@@ -3,28 +3,21 @@ async function windowActions() {
 
   let request = await fetch(endpoint);
 
-  let types = await request.json();
+  let cities = await request.json();
 
-  function findMatches(wordToMatch, types) {
+  function findMatches(wordToMatch, cities) {
     return types.filter(place=> {
       const regex = new RegExp(wordToMatch, 'gi');
-      return restaurant.type.match(regex) || restaurant.name.match(regex);
+      return place.city.match(regex);
     }); }
 
   function displayMatches(event) {
-    const matchArray = findMatches(events.target.value, types);
-    const html = matchArray.map(restaurant => {
+    const matchArray = findMatches(events.target.value, cities);
+    const html = matchArray.map(place => {
         return `
             <li>
-                <span class = "name"> ${restaurant.name}</span>
-                <span class = "type"> ${restaurant.type}</span>
-                <span class = "address"> ${restaurant.address_line_1}</span>
-                <span class = "city"> ${restaurant.city}</span>
-                <span class = "zip"> ${restaurant.zip}</span>
-            </li>
-            
-            `;
-
+                <span class = "name"> ${place.name}, ${place.city}, ${place.state}</span
+            </li>`;
     }).join('');
 
     suggestions.innerHTML = html;
